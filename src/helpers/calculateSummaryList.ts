@@ -1,10 +1,6 @@
-import { DataType, summaryDataType } from '../src/data'
+import { DataType, summaryDataType, acType } from '../helpers/types'
 
-interface acType {
-   "Task": number,
-   "Random Thought": number,
-   "Idea": number
-}
+
 
 function getDataForSummaryList(data: Array<any>) {
    return data.reduce((ac: acType, item: DataType) => {
